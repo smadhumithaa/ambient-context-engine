@@ -1,0 +1,21 @@
+# AI Call Copilot - Dependencies
+
+# ── System tray + global hotkeys ──────────────────────────────────
+pystray>=0.19.5
+pillow>=10.0.0
+keyboard>=0.13.5
+
+# ── Audio ─────────────────────────────────────────────────────────
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# ── STT: local (free, default) ────────────────────────────────────
+faster-whisper>=1.0.0
+
+# ── STT: OpenAI Whisper API (only needed if STT_PROVIDER=whisper) ─
+openai>=1.0.0
+
+# ── AI Providers (install all; only the chosen one is used) ───────
+anthropic>=0.25.0
+google-generativeai>=0.8.0
+groq>=0.9.0
