@@ -45,3 +45,14 @@ STT_MODEL=base                # tiny | base | small | medium | large-v2
 - Python 3.10+
 - Windows 10 (build 19041+) for overlay capture exclusion
 - Microphone access
+
+## Controls
+
+| Button | Hotkey | Action |
+|--------|--------|--------|
+| `⊘` | `Alt+C` | Clear messages |
+| `⏸` / `▶` | `Alt+P` | Pause / resume |
+| `◐` | `Ctrl+Shift+A` | Hide / show overlay |
+| `✕` | `Alt+Q` | Quit |
+
+> Tray icon (system tray) — right-click for menu when overlay is hidden.
