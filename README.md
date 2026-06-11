@@ -1,22 +1,3 @@
-# ambient-context-engine
-
-A modular Python pipeline that captures ambient audio in real-time, transcribes speech using local or cloud-based STT models, and routes detected utterances through a configurable LLM backend to generate contextual responses — displayed in a lightweight always-on-top desktop overlay.
-
-## Architecture
-
-```
-Microphone → Audio Buffer → VAD → STT (Whisper) → NLP Filter → LLM → Overlay UI
-```
-
-## Components
-
-| Module | Description |
-|--------|-------------|
-| `audio/listener.py` | Real-time audio capture, VAD, buffering |
-| `ai/engine.py` | Multi-provider LLM client (pluggable backend) |
-| `overlay/window.py` | Borderless desktop overlay (WDA_EXCLUDEFROMCAPTURE) |
-| `config.py` | Environment-based configuration loader |
-
 ## Supported LLM Backends
 
 - **Groq** — LLaMA 3.3, Mixtral, Gemma
